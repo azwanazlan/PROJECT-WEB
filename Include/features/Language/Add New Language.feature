@@ -8,7 +8,7 @@ Feature: Add New Language
     Given user navigate to Language page
     When user click on add language button
     And user enters language <language>
-    And user click on save button
+    And user click on save language button
     Then user should be able to add new language successfully
 
     Examples: 
@@ -22,7 +22,7 @@ Feature: Add New Language
     Given user navigate to Language page
    	When user click on add language button
     And user enters same language <language>
-    And user click on save button
+    And user click on save language button
     Then language already exists message will appear
     
      Examples:
@@ -33,6 +33,6 @@ Feature: Add New Language
     
     Given user navigate to Language page
    	When user click on add language button
-    And user click on save button
+    And user click on save language button
     Then input required message will appear
     
