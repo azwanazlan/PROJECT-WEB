@@ -44,9 +44,12 @@ import cucumber.api.java.en.When
 
 
 class Language {
+	
 	/**
 	 * Below is for add language feature
+	 *
 	 */
+	
 	@Given("user navigate to Language page")
 	def navigateToLanguagePage() {
 		WebUI.callTestCase(findTestCase('PROJECT WEB/common/Login/Positive/login-with-valid-credential'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -92,11 +95,12 @@ class Language {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/span_Required'), 5)
 		WebUI.closeBrowser()
 	}
-	
+
 	/**
 	 * Below is for delete language feature
+	 *
 	 */
-	
+
 	@When("user select a language checkbox")
 	def selectACheckbox() {
 		WebUI.check(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/checkboxMalay'))
@@ -106,33 +110,32 @@ class Language {
 	def clickOnDeleteLanguageButton() {
 		WebUI.click(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/input_Languages_btnDel'))
 	}
-	
+
 	@Then("user should be able to delete a language successfully")
 	def verifyDeleteALanguage() {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/div_Successfully Deleted       Close'), 5)
 	}
-	
-	@When("user select multiple language checkbox")
+
+	@When("user select more than one language checkbox")
 	def selectMultipleCheckbox() {
 		WebUI.check(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/checkBoxMandarin'))
 		WebUI.check(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/checkBoxThai'))
-		WebUI.check(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/checkBoxArab'))
 	}
-	
+
 	@Then("user should be able to delete multiple language successfully")
 	def verifyDeleteMultipleLanguage() {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/div_Successfully Deleted       Close'), 5)
 		WebUI.closeBrowser()
 	}
-	
+
 	/**
 	 * Below is for edit existing language feature
+	 *
 	 */
-	
+
 	@When("user click on language name")
 	def clickOnLanguageName() {
-		WebUI.click(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/a_Chinese'))
-		
+		WebUI.click(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/a_Arabic'))
 	}
 
 	@And("user rename the language name")
@@ -146,5 +149,16 @@ class Language {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/div_Successfully Saved       Close'), 5)
 		WebUI.closeBrowser()
 	}
-	 
+
+	@And("user rename the language name with existing language")
+	def renameWithExistsLanguageName() {
+		WebUI.doubleClick(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/input__languagename'))
+		WebUI.setText(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/input__languagename'),'English')
+	}
+	
+	@And("user leave the form blank")
+	def leaveTheFormBlank() {
+		WebUI.doubleClick(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/input__languagename'))
+		WebUI.setText(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/input__languagename'),'')
+	}
 }

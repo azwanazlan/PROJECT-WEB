@@ -14,7 +14,7 @@
    Scenario: Users delete more than one language
      
     Given user navigate to Language page
-   	When user select multiple language checkbox
+   	When user select more than one language checkbox
     And user click on delete language button
     Then user should be able to delete multiple language successfully
     
