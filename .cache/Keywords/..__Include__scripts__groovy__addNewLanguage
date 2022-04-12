@@ -1,8 +1,8 @@
 {
-  "keywordFileContentHash": "4E2F71F3278DB550BFE4BC6DC3331B1B",
+  "keywordFileContentHash": "CB96BB2255B00015F19F9F37502A46B0",
   "keywordClasses": [
     {
-      "name": "addNewLanguage",
+      "name": "Language",
       "keywordMethods": []
     }
   ],
