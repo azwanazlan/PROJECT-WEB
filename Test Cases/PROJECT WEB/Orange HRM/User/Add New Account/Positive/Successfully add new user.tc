@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Successfully add new user</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9d8d975c-f6d2-4794-ae00-e3cf4d3fd1d8</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5dfc03fb-f1b4-407c-a859-6565e0cf2d6a</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>afb35764-61b9-4709-93a8-afee1e638f8b</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>

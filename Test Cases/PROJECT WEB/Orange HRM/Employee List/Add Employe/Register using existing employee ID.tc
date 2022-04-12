@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Register using existing employee ID</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>554a9a1b-90b1-411f-974b-b33b6211739e</testCaseGuid>
+</TestCaseEntity>

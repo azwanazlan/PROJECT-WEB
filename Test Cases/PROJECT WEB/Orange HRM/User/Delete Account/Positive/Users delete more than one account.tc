@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Users delete more than one account</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>18b07f67-1935-4e2e-ab42-00b467778aa9</testCaseGuid>
+</TestCaseEntity>

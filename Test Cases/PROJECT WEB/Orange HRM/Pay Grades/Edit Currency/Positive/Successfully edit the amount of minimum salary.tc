@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Successfully edit the amount of minimum salary</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>28fe2256-7d5c-4f42-a0ca-5f730095be15</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Users enter less than five characters for username</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f1181763-d725-428c-a630-2d3f4c23197d</testCaseGuid>
+</TestCaseEntity>

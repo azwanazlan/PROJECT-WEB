@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Users delete more than one currency</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>454bd09a-4e66-4efe-a2d8-86c8cc29ae87</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Successfully delete job category</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9241babb-ea98-495e-b747-cc2acb175ead</testCaseGuid>
+</TestCaseEntity>
