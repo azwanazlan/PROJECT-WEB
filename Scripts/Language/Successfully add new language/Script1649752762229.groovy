@@ -17,21 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('PROJECT WEB/common/Login/Positive/login-with-valid-credential'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.mouseOver(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/b_PIM'))
-
-WebUI.click(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/a_Add Employee'))
-
-WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input__firstName'), 'Tom')
-
-WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input__lastName'), 'Holland')
-
-WebUI.uploadFile(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input_Photograph_photofile'), 'C:\\Automation\\PROJECT-WEB\\Tom Holland.jpg')
-
-WebUI.click(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input__btnSave'))
-
-WebUI.verifyElementPresent(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/h1_Personal Details'), 5)
-
-WebUI.closeBrowser()
+CucumberKW.runFeatureFile('Include/features/Language/Add New Language.feature')
 

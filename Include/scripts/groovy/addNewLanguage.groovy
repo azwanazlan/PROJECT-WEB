@@ -47,18 +47,49 @@ class addNewLanguage {
 	/**
 	 * The step definitions below match with Katalon sample Gherkin steps
 	 */
-	@Given("I want to write a step with (.*)")
-	def I_want_to_write_a_step_with_name(String name) {
-		println name
+	@Given("user navigate to Language page")
+	def navigateToLanguagePage() {
+		WebUI.callTestCase(findTestCase('PROJECT WEB/common/Login/Positive/login-with-valid-credential'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.mouseOver(findTestObject('PROJECT WEB/Language/Page_OrangeHRM/b_Admin'))
+		WebUI.mouseOver(findTestObject('PROJECT WEB/Language/Page_OrangeHRM/a_Qualifications'))
+		WebUI.click(findTestObject('PROJECT WEB/Language/Page_OrangeHRM/a_Languages'))	
 	}
 
-	@When("I check for the (\\d+) in step")
-	def I_check_for_the_value_in_step(int value) {
-		println value
+	@When("user click on add button")
+	def clickOnAddButton() {
+		WebUI.click(findTestObject('PROJECT WEB/Language/Page_OrangeHRM/input_Languages_btnAdd'))	
 	}
 
-	@Then("I verify the (.*) in step")
-	def I_verify_the_status_in_step(String status) {
-		println status
+	@And("user enters language (.*)")
+	def enterLanguage(String language) {
+		WebUI.setText(findTestObject('PROJECT WEB/Language/Page_OrangeHRM/input__languagename'), language)
+	}
+	
+	@And("user click on save button")
+	def clickOnSaveButton() {
+		WebUI.click(findTestObject('PROJECT WEB/Language/Page_OrangeHRM/input__btnSave'))
+	}
+	
+	@Then("user should be able to add new language successfully")
+	def verifyAddNewLanguage() {
+		WebUI.verifyElementPresent(findTestObject('PROJECT WEB/Language/Page_OrangeHRM/div_Successfully Saved       Close'), 5)
+		WebUI.closeBrowser()	
+	}
+	
+	@And("user enters same language (.*)")
+	def enterSameLanguage(String language) {
+		WebUI.setText(findTestObject('PROJECT WEB/Language/Page_OrangeHRM/input__languagename'), language)
+	}
+	
+	@Then("language already exists message will appear")
+	def verifyLanguageAlreadyExists() {
+		WebUI.verifyElementPresent(findTestObject('PROJECT WEB/Language/Page_OrangeHRM/div_Name Already Exists       Close'), 5)
+		WebUI.closeBrowser()
+	}
+	
+	@Then("input required message will appear")
+	def verifyInputRequiredMessage() {
+		WebUI.verifyElementPresent(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/span_Required'), 5)
+		WebUI.closeBrowser()
 	}
 }
