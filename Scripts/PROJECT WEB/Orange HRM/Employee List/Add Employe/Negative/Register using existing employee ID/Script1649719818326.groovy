@@ -27,12 +27,12 @@ WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input__fi
 
 WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input__lastName'), 'Hanks')
 
-WebUI.uploadFile(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input_Photograph_photofile'), 'C:\\Automation\\PROJECT WEB\\4mbwallpaper.jpg')
+WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/inputEmployeeID'), '0278')
 
 WebUI.click(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input__btnSave'))
 
-WebUI.verifyElementPresent(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/div_Failed to Save File Size Exceeded       Close'), 
-    0)
+WebUI.verifyElementPresent(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/div_Failed To Save Employee Id Exists       Close'), 
+    5)
 
 WebUI.closeBrowser()
 

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Successfully delete an employee record</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f403ac1f-4b6e-4181-984c-91800bd352f7</testCaseGuid>
+</TestCaseEntity>

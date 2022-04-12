@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Users delete more than one employee record</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a765ebac-1307-46fc-91b0-1a52b546467a</testCaseGuid>
+</TestCaseEntity>

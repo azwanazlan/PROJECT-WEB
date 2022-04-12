@@ -23,15 +23,11 @@ WebUI.mouseOver(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/b_PIM')
 
 WebUI.click(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/a_Employee List'))
 
-WebUI.selectOptionByValue(findTestObject(null), 'Full-Time Contract', true)
+WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/supervisorName'), 'John Smith')
 
 WebUI.click(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/searchButton'))
 
-WebUI.verifyElementPresent(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/td_Full-Time Contract'), 5)
-
-WebUI.verifyElementNotPresent(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/td_Full-Time Probation'), 5)
-
-WebUI.verifyElementNotPresent(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/td_Full-Time Permanent'), 5)
+WebUI.verifyElementPresent(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/td_John  Smith'), 5)
 
 WebUI.closeBrowser()
 
