@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "17E52D216A21D421BDE2ECD7AC87A955",
+  "keywordFileContentHash": "D11CAD3F3B5937F22504740B40A35135",
   "keywordClasses": [
     {
       "name": "Language",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

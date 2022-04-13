@@ -3,15 +3,15 @@
    <description></description>
    <name>a_Languages</name>
    <tag></tag>
-   <elementGuidId>2c208608-aca3-4d40-94d8-13e0fe87297f</elementGuidId>
+   <elementGuidId>a8b00b40-0c00-44c9-90ae-fad7993c8f1f</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>CSS</key>
-         <value>#menu_admin_viewLanguages</value>
-      </entry>
       <entry>
          <key>XPATH</key>
          <value>//a[@id='menu_admin_viewLanguages']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#menu_admin_viewLanguages</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

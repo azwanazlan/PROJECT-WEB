@@ -146,20 +146,10 @@ class Language {
 
 	@Then("user should be able to rename the language")
 	def verifyRenameLanguage() {
-		WebUI.verifyElementPresent(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/div_Successfully Saved       Close'), 5)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/div_Successfully Updated       Close'), 5)
 		WebUI.closeBrowser()
 	}
 	
-	@When("user click on existing language name (.*)")
-	def clickOnExistingLanguageName(String existingLanguage) {
-		WebUI.click(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/clickLanguage',['language':existingLanguage]))
-	}
-
-	@And("user rename the language name with another existing language (.*)")
-	def renameWithExistsLanguageName(String existingLanguage2) {
-		WebUI.doubleClick(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/input__languagename'))
-		WebUI.setText(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/input__languagename'), existingLanguage2)
-	}
 
 	@And("user leave the form blank")
 	def leaveTheFormBlank() {
