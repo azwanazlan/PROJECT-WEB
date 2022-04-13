@@ -29,6 +29,8 @@ WebUI.click(findTestObject('PROJECT WEB/Pay Grade/a_Grade 10'))
 
 WebUI.click(findTestObject('PROJECT WEB/Pay Grade/a_Malaysian Ringgit'))
 
+WebUI.doubleClick(findTestObject('PROJECT WEB/Pay Grade/minimumSalary'))
+
 WebUI.setText(findTestObject('PROJECT WEB/Pay Grade/minimumSalary'), '7000')
 
 WebUI.click(findTestObject('PROJECT WEB/Pay Grade/saveCurrencyButton'))
