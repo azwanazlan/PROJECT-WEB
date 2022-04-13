@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_Arabic</name>
+   <name>clickLanguage</name>
    <tag></tag>
    <elementGuidId>0568f8f4-135c-499d-a0de-375102bd01cb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Name'])[1]/following::a[1]</value>
+         <value>//a[contains(text(),'${language}')]</value>
       </entry>
       <entry>
          <key>CSS</key>

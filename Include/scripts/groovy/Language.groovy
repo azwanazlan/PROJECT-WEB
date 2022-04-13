@@ -44,12 +44,12 @@ import cucumber.api.java.en.When
 
 
 class Language {
-	
+
 	/**
 	 * Below is for add language feature
 	 *
 	 */
-	
+
 	@Given("user navigate to Language page")
 	def navigateToLanguagePage() {
 		WebUI.callTestCase(findTestCase('PROJECT WEB/common/Login/Positive/login-with-valid-credential'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -101,9 +101,9 @@ class Language {
 	 *
 	 */
 
-	@When("user select a language checkbox")
-	def selectACheckbox() {
-		WebUI.check(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/checkboxMalay'))
+	@When("user select a language checkbox (.*)")
+	def selectACheckbox(String language) {
+		WebUI.check(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/checkboxLanguage', ['language':language]))
 	}
 
 	@And("user click on delete language button")
@@ -116,10 +116,10 @@ class Language {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/div_Successfully Deleted       Close'), 5)
 	}
 
-	@When("user select more than one language checkbox")
-	def selectMultipleCheckbox() {
-		WebUI.check(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/checkBoxMandarin'))
-		WebUI.check(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/checkBoxThai'))
+	@When("user select more than one language checkbox (.*) and (.*)")
+	def selectMultipleCheckbox(String language1, String language2) {
+		WebUI.check(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/checkboxLanguage', ['language':language1]))
+		WebUI.check(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/checkboxLanguage', ['language':language2]))
 	}
 
 	@Then("user should be able to delete multiple language successfully")
@@ -133,15 +133,15 @@ class Language {
 	 *
 	 */
 
-	@When("user click on language name")
-	def clickOnLanguageName() {
-		WebUI.click(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/a_Arabic'))
+	@When("user click on language name (.*)")
+	def clickOnLanguageName(String language) {
+		WebUI.click(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/clickLanguage',['language':language]))
 	}
 
-	@And("user rename the language name")
-	def renameLanguageName() {
+	@And("user rename the language name (.*)")
+	def renameLanguageName(String renameTo) {
 		WebUI.doubleClick(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/input__languagename'))
-		WebUI.setText(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/input__languagename'),'Mandarin')
+		WebUI.setText(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/input__languagename'),renameTo)
 	}
 
 	@Then("user should be able to rename the language")
@@ -149,13 +149,18 @@ class Language {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/div_Successfully Saved       Close'), 5)
 		WebUI.closeBrowser()
 	}
-
-	@And("user rename the language name with existing language")
-	def renameWithExistsLanguageName() {
-		WebUI.doubleClick(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/input__languagename'))
-		WebUI.setText(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/input__languagename'),'English')
-	}
 	
+	@When("user click on existing language name (.*)")
+	def clickOnExistingLanguageName(String existingLanguage) {
+		WebUI.click(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/clickLanguage',['language':existingLanguage]))
+	}
+
+	@And("user rename the language name with another existing language (.*)")
+	def renameWithExistsLanguageName(String existingLanguage2) {
+		WebUI.doubleClick(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/input__languagename'))
+		WebUI.setText(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/input__languagename'), existingLanguage2)
+	}
+
 	@And("user leave the form blank")
 	def leaveTheFormBlank() {
 		WebUI.doubleClick(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/input__languagename'))
