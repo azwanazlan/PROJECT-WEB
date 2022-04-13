@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Sucessfully closed</name>
+   <name>Sucessfully saved</name>
    <tag></tag>
    <elementGuidId>dc3cd32e-2026-47e5-a889-86f1ba448410</elementGuidId>
    <selectorCollection>
@@ -17,7 +17,6 @@ Successfully Saved
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
