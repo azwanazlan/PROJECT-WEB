@@ -99,7 +99,7 @@
       <testCaseId>Test Cases/PROJECT WEB/Orange HRM/User/Delete Account/Positive/Successfully delete account</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>ac28138c-e9ca-41ef-956b-5b5568d42080</guid>
+      <guid>58951325-4fe4-428d-8ff9-96d5a14ab09c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/PROJECT WEB/Orange HRM/User/Delete Account/Positive/Users delete more than one account</testCaseId>

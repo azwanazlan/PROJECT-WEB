@@ -8,6 +8,7 @@ Feature: Delete Education Level
     And user click on delete education level button
     Then user should be able to delete an education level successfully
     
+ 
    Scenario: Successfully delete more than one education level
     
     Given user navigate to education page

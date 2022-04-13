@@ -33,11 +33,11 @@ WebUI.sendKeys(findTestObject('PROJECT WEB/User/Page_OrangeHRM/input_Employee in
 
 WebUI.click(findTestObject('PROJECT WEB/User/Page_OrangeHRM/search button'))
 
-WebUI.check(findTestObject('PROJECT WEB/User/Page_OrangeHRM/input_checkFirstCheckbox'))
+WebUI.check(findTestObject('PROJECT WEB/User/Page_OrangeHRM/usernameCheckBox', [('username') : 'HarryKane100']))
 
-WebUI.check(findTestObject('PROJECT WEB/User/Page_OrangeHRM/input_checkSecondCheckbox'))
+WebUI.check(findTestObject('PROJECT WEB/User/Page_OrangeHRM/usernameCheckBox', [('username') : 'HarryKane3']))
 
-WebUI.check(findTestObject('PROJECT WEB/User/Page_OrangeHRM/input_checkThirdCheckBox'))
+WebUI.check(findTestObject('PROJECT WEB/User/Page_OrangeHRM/usernameCheckBox', [('username') : 'HarryKane4']))
 
 WebUI.click(findTestObject('PROJECT WEB/User/Page_OrangeHRM/input_Status_btnDelete'))
 

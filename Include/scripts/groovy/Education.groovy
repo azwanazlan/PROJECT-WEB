@@ -100,7 +100,7 @@ class Education {
 
 	@When("user select an education level")
 	def selectAnEducationLevel() {
-		WebUI.check(findTestObject('Object Repository/PROJECT WEB/Education/Page_OrangeHRM/checkBtnFirst'))
+		WebUI.check(findTestObject('Object Repository/PROJECT WEB/Education/Page_OrangeHRM/checkBtn', ['education' : 'Matriculation']))
 	}
 
 	@And("user click on delete education level button")
@@ -116,8 +116,8 @@ class Education {
 
 	@When("user select more than one education level")
 	def selectMoreThanOneEducationLevel() {
-		WebUI.check(findTestObject('Object Repository/PROJECT WEB/Education/Page_OrangeHRM/checkBtn2nd'))
-		WebUI.check(findTestObject('Object Repository/PROJECT WEB/Education/Page_OrangeHRM/checkBtn3rd'))
+		WebUI.check(findTestObject('Object Repository/PROJECT WEB/Education/Page_OrangeHRM/checkBtn', ['education' : 'Diploma']))
+		WebUI.check(findTestObject('Object Repository/PROJECT WEB/Education/Page_OrangeHRM/checkBtn', ['education' : 'Degree']))
 	}
 
 	@Then("user should be able to delete more than one education level successfully")

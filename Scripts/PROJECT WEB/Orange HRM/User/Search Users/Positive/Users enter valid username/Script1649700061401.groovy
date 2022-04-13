@@ -31,7 +31,7 @@ WebUI.setText(findTestObject('PROJECT WEB/User/Page_OrangeHRM/input username'), 
 
 WebUI.click(findTestObject('PROJECT WEB/User/Page_OrangeHRM/search button'))
 
-WebUI.verifyElementPresent(findTestObject('PROJECT WEB/User/Page_OrangeHRM/td_HarryKane'), 5)
+WebUI.verifyElementPresent(findTestObject('PROJECT WEB/User/Page_OrangeHRM/a_HarryKane'), 5)
 
 WebUI.closeBrowser()
 

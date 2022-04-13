@@ -17,5 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.check(findTestObject('PROJECT WEB/Education/Page_OrangeHRM/education level checkBox'))
+WebUI.verifyElementHasAttribute(findTestObject('PROJECT WEB/Education/Page_OrangeHRM/education level checkBox'), '', 0)
 

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_checkSecondCheckbox</name>
+   <name>usernameCheckBox</name>
    <tag></tag>
-   <elementGuidId>625bc638-4890-49d5-95ff-07de4e744ee6</elementGuidId>
+   <elementGuidId>b612bc16-881a-49c4-844a-5e92493a959f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#ohrmList_chkSelectRecord_72</value>
+         <value>#ohrmList_chkSelectRecord_61</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//tr[2]/td/input</value>
+         <value>//a[contains(text(),'${username}')]//preceding::input[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -35,7 +35,7 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>ohrmList_chkSelectRecord_72</value>
+      <value>ohrmList_chkSelectRecord_61</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -49,21 +49,21 @@
       <matchCondition>equals</matchCondition>
       <name>value</name>
       <type>Main</type>
-      <value>72</value>
+      <value>61</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;ohrmList_chkSelectRecord_72&quot;)</value>
+      <value>id(&quot;ohrmList_chkSelectRecord_61&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='ohrmList_chkSelectRecord_72']</value>
+      <value>//input[@id='ohrmList_chkSelectRecord_61']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -84,6 +84,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@type = 'checkbox' and @id = 'ohrmList_chkSelectRecord_72' and @name = 'chkSelectRow[]']</value>
+      <value>//input[@type = 'checkbox' and @id = 'ohrmList_chkSelectRecord_61' and @name = 'chkSelectRow[]']</value>
    </webElementXpaths>
 </WebElementEntity>

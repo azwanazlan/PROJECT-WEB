@@ -15,6 +15,7 @@ Feature: Add Education Level
     | SPM						|
     | Matriculation	|
     |	Diploma				|
+    | Degree				|
     
    Scenario Outline: Users enter the same education level
     
