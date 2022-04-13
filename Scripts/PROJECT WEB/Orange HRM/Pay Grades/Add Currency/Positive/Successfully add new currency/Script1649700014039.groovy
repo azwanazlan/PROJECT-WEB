@@ -33,6 +33,10 @@ WebUI.setText(findTestObject('PROJECT WEB/Pay Grade/currencyName'), 'Malaysian R
 
 WebUI.sendKeys(findTestObject('PROJECT WEB/Pay Grade/currencyName'), Keys.chord(Keys.ENTER))
 
+WebUI.setText(findTestObject('PROJECT WEB/Pay Grade/minimumSalary'), '6000')
+
+WebUI.setText(findTestObject('PROJECT WEB/Pay Grade/maximumSalary'), '10000')
+
 WebUI.click(findTestObject('PROJECT WEB/Pay Grade/saveCurrencyButton'))
 
 WebUI.verifyElementPresent(findTestObject('PROJECT WEB/Pay Grade/verifySucessfullySavedCurrency'), 5)
@@ -43,6 +47,10 @@ WebUI.setText(findTestObject('PROJECT WEB/Pay Grade/currencyName'), 'United Stat
 
 WebUI.sendKeys(findTestObject('PROJECT WEB/Pay Grade/currencyName'), Keys.chord(Keys.ENTER))
 
+WebUI.setText(findTestObject('PROJECT WEB/Pay Grade/minimumSalary'), '6000')
+
+WebUI.setText(findTestObject('PROJECT WEB/Pay Grade/maximumSalary'), '10000')
+
 WebUI.click(findTestObject('PROJECT WEB/Pay Grade/saveCurrencyButton'))
 
 WebUI.verifyElementPresent(findTestObject('PROJECT WEB/Pay Grade/verifySucessfullySavedCurrency'), 5)
@@ -52,6 +60,10 @@ WebUI.click(findTestObject('PROJECT WEB/Pay Grade/addCurrencyButton'))
 WebUI.setText(findTestObject('PROJECT WEB/Pay Grade/currencyName'), 'Japanese Yen')
 
 WebUI.sendKeys(findTestObject('PROJECT WEB/Pay Grade/currencyName'), Keys.chord(Keys.ENTER))
+
+WebUI.setText(findTestObject('PROJECT WEB/Pay Grade/minimumSalary'), '6000')
+
+WebUI.setText(findTestObject('PROJECT WEB/Pay Grade/maximumSalary'), '10000')
 
 WebUI.click(findTestObject('PROJECT WEB/Pay Grade/saveCurrencyButton'))
 

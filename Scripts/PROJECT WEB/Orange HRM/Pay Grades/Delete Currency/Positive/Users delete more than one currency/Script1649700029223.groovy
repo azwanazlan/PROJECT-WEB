@@ -27,9 +27,9 @@ WebUI.click(findTestObject('PROJECT WEB/Pay Grade/Pay Grades'))
 
 WebUI.click(findTestObject('PROJECT WEB/Pay Grade/a_Grade 10'))
 
-WebUI.check(findTestObject('PROJECT WEB/Pay Grade/firstCheckBoxCurrency'))
+WebUI.check(findTestObject('PROJECT WEB/Pay Grade/checkBoxCurrency', [('currency') : 'United States Dollar']))
 
-WebUI.check(findTestObject('PROJECT WEB/Pay Grade/secondCheckBoxCurrency'))
+WebUI.check(findTestObject('PROJECT WEB/Pay Grade/checkBoxCurrency', [('currency') : 'Japanese Yen']))
 
 WebUI.click(findTestObject('PROJECT WEB/Pay Grade/deleteCurrencyButton'))
 
