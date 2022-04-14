@@ -154,7 +154,7 @@ class Education {
 		WebUI.doubleClick(findTestObject('Object Repository/PROJECT WEB/Education/Page_OrangeHRM/input__educationname'))
 		WebUI.setText(findTestObject('Object Repository/PROJECT WEB/Education/Page_OrangeHRM/input__educationname'), existingEducation)
 	}
-	
+
 	@Then("education level already exists message is displayed")
 	def verifyExistsEducationLevel() {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/PROJECT WEB/Education/Page_OrangeHRM/div_Level Already Exists       Close'), 5)
