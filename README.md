@@ -28,3 +28,10 @@ There are 6 features from this website that I had tested on:
 | User                 | Web Record             |
 
 > All the test artifacts e.g. test cases, test suites, data files, etc., that I had created for this web testing project were stored under a folder called ‘PROJECT WEB’, within the other main folders e.g. Test Cases, Test Suites, Data Files, etc.
+
+- You can try it first then compare it with mine if you have any problem with the execution. So hope you will enjoy your learning on test automation with Katalon Studio. :v:
+
+### Recommended reading for starters
+
+- https://www.softwaretestinghelp.com/katalon-studio-tutorial/
+- https://www.tutorialspoint.com/learn_automation_with_katalon_studio_selenium_webdriver_based_tool/index.asp
