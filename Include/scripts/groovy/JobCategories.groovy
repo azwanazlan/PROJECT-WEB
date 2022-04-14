@@ -44,14 +44,14 @@ import cucumber.api.java.en.When
 
 
 class JobCategories {
-	
-	
+
+
 	/**
 	 * Successfully add new job category
 	 * 
 	 */
-	
-	
+
+
 	@Given("users navigate to job categories page")
 	def navigateToJobCategoryPage() {
 		WebUI.callTestCase(findTestCase('PROJECT WEB/common/Login/Positive/login-with-valid-credential'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -62,65 +62,65 @@ class JobCategories {
 
 	@When("users click on add job category button")
 	def addJobCategory( ) {
-	WebUI.click(findTestObject('Object Repository/PROJECT WEB/Job Categories/input_Job Categories_btnAdd'))
+		WebUI.click(findTestObject('Object Repository/PROJECT WEB/Job Categories/input_Job Categories_btnAdd'))
 	}
 
 	@And("users enter job category name (.*)")
 	def enterJobCategoryName(String jobCategories) {
-		WebUI.setText(findTestObject('Object Repository/PROJECT WEB/Job Categories/Job category name'), jobCategories)	
+		WebUI.setText(findTestObject('Object Repository/PROJECT WEB/Job Categories/Job category name'), jobCategories)
 	}
-	
+
 	@And("users click on save job category button")
 	def saveJobCategoryName() {
 		WebUI.click(findTestObject('Object Repository/PROJECT WEB/Job Categories/save button'))
 	}
-	
+
 	@Then("users should be able to add new job category")
 	def verifyAddNewJobCategory() {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/PROJECT WEB/Job Categories/Sucessfully saved'), 5)
 		WebUI.closeBrowser()
 	}
-	
+
 	@Then("job category name already exists message will appear")
 	def verifyJobCategoryExists() {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/PROJECT WEB/Job Categories/span_Already exists'), 5)
 		WebUI.closeBrowser()
 	}
-	
-	
+
+
 	/**
 	 * 
 	 * Below is for delete job category
 	 */
-	
-	
+
+
 	@When("users select a job category")
 	def selectAJobCategory( ) {
-	WebUI.check(findTestObject('Object Repository/PROJECT WEB/Job Categories/checkBoxFirst'))
+		WebUI.check(findTestObject('Object Repository/PROJECT WEB/Job Categories/checkBoxJob', ['job':'Admin']))
 	}
-	
+
 	@And("users click on delete job category button")
 	def deleteJobCategory() {
 		WebUI.click(findTestObject('Object Repository/PROJECT WEB/Job Categories/input_Job Categories_btnDelete'))
 	}
-	
+
 	@And("users click on delete job category confirmation button")
 	def deleteJobCategoryConfirmation() {
 		WebUI.click(findTestObject('Object Repository/PROJECT WEB/Job Categories/confirmationDeleteButton'))
 	}
-	
+
 	@Then("users should be able to delete a job category")
 	def verifyAJobCategoryDelete() {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/PROJECT WEB/Job Categories/div_Successfully Deleted       Close'), 5)
 		WebUI.closeBrowser()
 	}
-	
+
 	@When("users select more than one job category")
 	def selectMoreThanOneJobCategory( ) {
-	WebUI.check(findTestObject('Object Repository/PROJECT WEB/Job Categories/checkBoxSecond'))
-	WebUI.check(findTestObject('Object Repository/PROJECT WEB/Job Categories/checkBoxThird'))
+		WebUI.check(findTestObject('Object Repository/PROJECT WEB/Job Categories/checkBoxJob', ['job':'IT']))
+		WebUI.check(findTestObject('Object Repository/PROJECT WEB/Job Categories/checkBoxJob', ['job':'Engineer']))
 	}
-	
+
 	@Then("users should be able to delete more than one job category")
 	def verifyMoreThanOneJobCategoryDelete() {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/PROJECT WEB/Job Categories/div_Successfully Deleted       Close'), 5)

@@ -4,9 +4,9 @@ Feature: Add Job Category
   
   Scenario Outline: Successfully add new job category
     
-    Given users navigate to job category page
+    Given users navigate to job categories page
     When users click on add job category button
-    And users enter job category name <jobCategories> 
+    And users enter job category name <jobCategories>
     And users click on save job category button
     Then users should be able to add new job category
     
@@ -19,7 +19,7 @@ Feature: Add Job Category
 		
   Scenario Outline: Users enter existing job category
    
-    Given users navigate to job category page
+    Given users navigate to job categories page
     When users click on add job category button
     And users enter job category name  <jobCategories> 
     And users click on save job category button
