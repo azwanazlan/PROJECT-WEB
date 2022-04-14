@@ -35,10 +35,10 @@ There are 6 features from this website that I had tested on:
 
 | **List of features** | **Testing approaches** |
 |----------------------|------------------------|
-| Education            | Behaviour Data-Driven  |
+| Education            | Behaviour Driven Developement  |
 | Employee List        | Web Record             |
-| Job Categories       | Behaviour Data-Driven  |
-| Language             | Behaviour Data-Driven  |
+| Job Categories       | Behaviour Driven Developement  |
+| Language             | Behaviour Driven Developement  |
 | Pay Grades           | Web Record             |
 | User                 | Web Record             |
 
