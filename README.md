@@ -18,13 +18,13 @@ The web app that I tested is called Orange HRM, which can be visited at https://
 There are 6 features from this website that I had tested on:
 
 
-|List of features| Testing approaches |
-|-----------|-----------|--------------
-|    Education       	|  Behaviour Data-Driven|
-| Employee List			|Web Record
-|	Job Categories		|Behaviour Data-Driven
-|	Language			|Behaviour Data-Driven
-|	Pay Grades			|Web Record
-|	User				|Web Record
+| **List of features** | **Testing approaches** |
+|----------------------|------------------------|
+| Education            | Behaviour Data-Driven  |
+| Employee List        | Web Record             |
+| Job Categories       | Behaviour Data-Driven  |
+| Language             | Behaviour Data-Driven  |
+| Pay Grades           | Web Record             |
+| User                 | Web Record             |
 
 > All the test artifacts e.g. test cases, test suites, data files, etc., that I had created for this web testing project were stored under a folder called ‘PROJECT WEB’, within the other main folders e.g. Test Cases, Test Suites, Data Files, etc.
