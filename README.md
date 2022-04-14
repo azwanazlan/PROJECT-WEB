@@ -10,6 +10,8 @@ The web app that I tested is called Orange HRM, which can be visited at https://
 
 ![You can go through the website and familiarize yourself with the listed possible features and scenarios.](https://i.ibb.co/Rpq0gsD/Orange-HRM.png)
 
+You can go through the website and familiarize yourself to find possible features and scenarios.
+
 ### Note
 
  - Since this project folder contain external **.xlsx and .jpg** files which their VALUE are binded with their location so I will suggest you to clone this repository to **C:/Automation/PROJECT-WEB** to avoid execution error. If you know what you are doing then it is fine to ignore this point.
