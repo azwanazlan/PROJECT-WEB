@@ -37,8 +37,6 @@ WebDriver driver = DriverFactory.getWebDriver()
 
 String getMessage = driver.switchTo().alert().getText()
 
-WebUI.delay(2)
-
 WebUI.verifyEqual(getMessage, 'Wrong password.')
 
 WebUI.closeBrowser()
