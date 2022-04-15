@@ -2,7 +2,7 @@
 # Web Testing Project
 
 
-Hi! I'm Azwan:smiley:. This project is about to show some samples of web automation test project using Katalon Studio for those who are new to automation testing. This sample project also will help you ease while learning Katalon Studio online at your own pace.
+Hi! I'm Azwan:smiley:. This project is about to show some samples of web automation test project using Katalon Studio. For those who are new to automation testing, this sample project also will help you ease while learning Katalon Studio online at your own pace.
 
 
 
