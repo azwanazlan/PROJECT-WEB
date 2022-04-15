@@ -149,7 +149,7 @@ class Language {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/PROJECT WEB/Language/Page_OrangeHRM/div_Successfully Updated       Close'), 5)
 		WebUI.closeBrowser()
 	}
-	
+
 
 	@And("user leave the form blank")
 	def leaveTheFormBlank() {
