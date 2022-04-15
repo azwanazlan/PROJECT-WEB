@@ -1,12 +1,26 @@
-# PROJECT-WEB
 
 # Web Testing Project
 
-Hi! I'm Azwan. This project is about to show some samples of web automation test project using Katalon Studio for those who are new to automation testing. This sample project will help you ease while learning Katalon Studio online at your own pace.
+
+Hi! I'm Azwan:smiley:. This project is about to show some samples of web automation test project using Katalon Studio. For those who are new to automation testing, this sample project also will help you ease while learning Katalon Studio online at your own pace.
+
+
+
+![enter image description here](https://i.ibb.co/6ytdqfN/Web-testing-samples.png)
+
+
 
 
 ## Start
 The web app that I tested is called Orange HRM, which can be visited at https://opensource-demo.orangehrmlive.com/. This app is a mock website that was created for automation testers to practice their skills on. The website is meant to mimic a Human Resources Management (HRM) application.
+
+
+
+![You can go through the website and familiarize yourself with the listed possible features and scenarios.](https://i.ibb.co/Rpq0gsD/Orange-HRM.png)
+
+
+
+You can go through the website and familiarize yourself to find possible features and scenarios.
 
 ### Note
 
@@ -20,10 +34,10 @@ There are 6 features from this website that I had tested on:
 
 | **List of features** | **Testing approaches** |
 |----------------------|------------------------|
-| Education            | Behaviour Data-Driven  |
+| Education            | Behaviour Driven Developement  |
 | Employee List        | Web Record             |
-| Job Categories       | Behaviour Data-Driven  |
-| Language             | Behaviour Data-Driven  |
+| Job Categories       | Behaviour Driven Developement  |
+| Language             | Behaviour Driven Developement  |
 | Pay Grades           | Web Record             |
 | User                 | Web Record             |
 
