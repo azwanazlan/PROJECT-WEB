@@ -31,13 +31,28 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Page_STORE/input_Passwo
 
 WebUI.click(findTestObject('Object Repository/Page_STORE/button_Log in'))
 
-WebUI.verifyAlertPresent(5)
 
-WebDriver driver = DriverFactory.getWebDriver()
 
-String getMessage = driver.switchTo().alert().getText()
-
-WebUI.verifyEqual(getMessage, 'Wrong password.')
+    if (WebUI.verifyAlertPresent(5) == true) {
+        
+		WebDriver driver = DriverFactory.getWebDriver()
+		
+		String getMessage = driver.switchTo().alert().getText()
+		
+		WebUI.verifyEqual(getMessage, 'Wrong password.')
+    }
+    
+    else if (WebUI.verifyAlertNotPresent(5) == true) {
+		
+		WebUI.click(findTestObject('Object Repository/Page_STORE/button_Log in'))
+		
+		WebDriver driver = DriverFactory.getWebDriver()
+		
+		String getMessage = driver.switchTo().alert().getText()
+		
+		WebUI.verifyEqual(getMessage, 'Wrong password.')
+	
+    }
 
 WebUI.closeBrowser()
 
