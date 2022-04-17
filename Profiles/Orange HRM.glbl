@@ -44,4 +44,54 @@
       <initValue>'abc123'</initValue>
       <name>pwdLessThan8Character</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>unique ID for employee</description>
+      <initValue>'0278'</initValue>
+      <name>existingID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'C:\\Automations\\PROJECT-WEB\\4mbwallpaper.jpg'</initValue>
+      <name>fileLargerThan1MB</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'HarryKane'</initValue>
+      <name>registeredUsername</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'TomHanks'</initValue>
+      <name>unregisteredUsername</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'TomHiddleston'</initValue>
+      <name>unregisteredUsername2</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Tom'</initValue>
+      <name>firstName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Hanks'</initValue>
+      <name>secondName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'John'</initValue>
+      <name>existingFirstName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Smith'</initValue>
+      <name>existingSecondName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Tony Stark'</initValue>
+      <name>unregisteredName</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

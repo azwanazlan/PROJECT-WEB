@@ -6,12 +6,12 @@
    <elementGuidId>f3e91dc0-0299-458f-b7cc-db7998c55ae9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#ohrmList_chkSelectRecord_62</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//tr[1]/td/input</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#ohrmList_chkSelectRecord_62</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

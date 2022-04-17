@@ -23,19 +23,19 @@ WebUI.mouseOver(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/b_PIM')
 
 WebUI.click(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/a_Add Employee'))
 
-WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input__firstName'), 'Tom')
+WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input__firstName'), GlobalVariable.firstName)
 
-WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input__lastName'), 'Hanks')
+WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input__lastName'), GlobalVariable.secondName)
 
-WebUI.check(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input_Create Login Details_chkLogin'))
+WebUI.check(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/checkBoxCreateLogin'))
 
-WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input__user_name'), 'HarryKane')
+WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input__user_name'), GlobalVariable.registeredUsername)
 
 WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input__user_password'), GlobalVariable.createUserPassword)
 
 WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input__re_password'), GlobalVariable.createUserPassword)
 
-WebUI.click(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input__btnSave'))
+WebUI.click(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/BtnSave'))
 
 WebUI.verifyElementPresent(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/div_Failed To Save User Name Exists       Close'), 
     5)

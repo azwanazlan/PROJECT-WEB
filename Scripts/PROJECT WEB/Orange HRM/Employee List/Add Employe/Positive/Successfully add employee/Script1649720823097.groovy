@@ -23,15 +23,16 @@ WebUI.mouseOver(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/b_PIM')
 
 WebUI.click(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/a_Add Employee'))
 
-WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input__firstName'), 'Tom')
+WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input__firstName'), employeeFirstName)
 
-WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input__lastName'), 'Holland')
+WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input__lastName'), employeeLastName)
 
-WebUI.uploadFile(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input_Photograph_photofile'), 'C:\\Automation\\PROJECT-WEB\\Tom Holland.jpg')
+WebUI.uploadFile(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input_Photograph_photofile'), employeeURL)
 
-WebUI.click(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input__btnSave'))
+WebUI.click(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/BtnSave'))
 
-WebUI.verifyElementPresent(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/h1_Personal Details'), 5)
+WebUI.verifyElementPresent(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/h1_verifyEmployee', [('employee') : employeeFullName]), 
+    5)
 
 WebUI.closeBrowser()
 

@@ -23,15 +23,20 @@ WebUI.mouseOver(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/b_PIM')
 
 WebUI.click(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/a_Employee List'))
 
-WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input_EmployeeName'), 'Tom Holland')
+x = WebUI.concatenate((([GlobalVariable.existingFirstName, ' ', GlobalVariable.existingSecondName]) as String[]), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input_EmployeeName'), x)
 
 WebUI.click(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/searchButton'))
 
-WebUI.verifyElementPresent(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/a_Tom'), 5)
+WebUI.verifyElementPresent(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/a_employeeName', [('employeeFirstName') : GlobalVariable.existingFirstName
+            , ('EmployeeSecondName') : GlobalVariable.existingSecondName]), 5)
 
-WebUI.click(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/a_Tom'))
+WebUI.click(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/a_employeeName', [('employeeFirstName') : GlobalVariable.existingFirstName
+            , ('employeeSecondName') : GlobalVariable.existingSecondName]))
 
-WebUI.verifyElementPresent(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/h1_Tom Holland'), 5)
+WebUI.verifyElementPresent(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/h1_verifyEmployee', [('employee') : x]), 
+    5)
 
 WebUI.closeBrowser()
 

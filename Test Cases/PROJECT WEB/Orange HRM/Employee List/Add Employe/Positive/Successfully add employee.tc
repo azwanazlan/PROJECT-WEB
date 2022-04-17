@@ -5,4 +5,32 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>c0825513-3668-4cd2-80eb-290a8a6b87e6</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8e7e6116-1c93-4a8d-9a2d-a712eddf80fc</id>
+      <masked>false</masked>
+      <name>employeeFirstName</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e1ca1ff2-7b85-4c67-a37e-e32019117480</id>
+      <masked>false</masked>
+      <name>employeeLastName</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f49172cb-499f-4f51-848e-1879c8c70c2e</id>
+      <masked>false</masked>
+      <name>employeeFullName</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>67244636-a003-4e23-9454-ff22956397f4</id>
+      <masked>false</masked>
+      <name>employeeURL</name>
+   </variable>
 </TestCaseEntity>

@@ -28,11 +28,14 @@ WebUI.selectOptionByLabel(findTestObject('PROJECT WEB/Employee List/Page_OrangeH
 
 WebUI.click(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/searchButton'))
 
-WebUI.verifyElementPresent(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/td_Full-Time Contract'), 5)
+WebUI.verifyElementPresent(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/td_verifyEmploymentStatus', [('employmentStatus') : 'Full-Time Contract']), 
+    5)
 
-WebUI.verifyElementNotPresent(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/td_Full-Time Probation'), 5)
+WebUI.verifyElementNotPresent(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/td_verifyEmploymentStatus', [('employmentStatus') : 'Full-Time Probation']), 
+    5)
 
-WebUI.verifyElementNotPresent(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/td_Full-Time Permanent'), 5)
+WebUI.verifyElementNotPresent(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/td_verifyEmploymentStatus', [('employmentStatus') : 'Full-Time Permanent']), 
+    5)
 
 WebUI.closeBrowser()
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btnDelete</name>
+   <name>BtnDelete</name>
    <tag></tag>
    <elementGuidId>bbda5416-c9dd-4846-859a-3a79874f948b</elementGuidId>
    <selectorCollection>

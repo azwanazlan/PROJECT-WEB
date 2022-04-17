@@ -23,13 +23,15 @@ WebUI.mouseOver(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/b_PIM')
 
 WebUI.click(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/a_Add Employee'))
 
-WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input__firstName'), 'Tom')
+WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input__firstName'), GlobalVariable.firstName)
 
-WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input__lastName'), 'Hanks')
+WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input__lastName'), GlobalVariable.secondName)
 
-WebUI.check(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input_Create Login Details_chkLogin'))
+WebUI.check(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/checkBoxCreateLogin'))
 
-WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input__user_name'), 'TomHanks')
+y = WebUI.concatenate((([GlobalVariable.firstName, GlobalVariable.secondName]) as String[]))
+
+WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input__user_name'), y)
 
 WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input__user_password'), GlobalVariable.createUserPassword)
 
@@ -37,9 +39,12 @@ WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input__re
 
 WebUI.verifyElementPresent(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/span_Very Weak'), 5)
 
-WebUI.click(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input__btnSave'))
+WebUI.click(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/BtnSave'))
 
-WebUI.verifyElementPresent(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/h1_Personal Details'), 5)
+x = WebUI.concatenate((([GlobalVariable.firstName, ' ', GlobalVariable.secondName]) as String[]))
+
+WebUI.verifyElementPresent(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/h1_verifyEmployee', [('employee') : x]), 
+    5)
 
 WebUI.closeBrowser()
 

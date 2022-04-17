@@ -27,11 +27,12 @@ WebUI.click(findTestObject('PROJECT WEB/User/Page_OrangeHRM/a_Users'), FailureHa
 
 WebUI.verifyElementPresent(findTestObject('PROJECT WEB/User/Page_OrangeHRM/verify system users'), 5)
 
-WebUI.setText(findTestObject('PROJECT WEB/User/Page_OrangeHRM/input username'), 'harryKane')
+WebUI.setText(findTestObject('PROJECT WEB/User/Page_OrangeHRM/input username'), 'John.Smith')
 
 WebUI.click(findTestObject('PROJECT WEB/User/Page_OrangeHRM/search button'))
 
-WebUI.verifyElementPresent(findTestObject('PROJECT WEB/User/Page_OrangeHRM/a_HarryKane'), 5)
+WebUI.verifyElementPresent(findTestObject('PROJECT WEB/User/Page_OrangeHRM/a_ListUsers', [('listUsers') : 'John.Smith']), 
+    5)
 
 WebUI.closeBrowser()
 

@@ -35,7 +35,7 @@ WebUI.selectOptionByValue(findTestObject('PROJECT WEB/User/Page_OrangeHRM/select
 
 WebUI.setText(findTestObject('PROJECT WEB/User/Page_OrangeHRM/input__systemUseremployeeNameempName'), 'Harry Kane')
 
-WebUI.setText(findTestObject('PROJECT WEB/User/Page_OrangeHRM/input__systemUseruserName'), 'Harry Kane100')
+WebUI.setText(findTestObject('PROJECT WEB/User/Page_OrangeHRM/input__systemUseruserName'), 'HarryKane100')
 
 WebUI.selectOptionByValue(findTestObject('PROJECT WEB/User/Page_OrangeHRM/select_EnabledDisabled'), '1', true)
 

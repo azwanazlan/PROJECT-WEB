@@ -23,15 +23,18 @@ WebUI.mouseOver(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/b_PIM')
 
 WebUI.click(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/a_Employee List'))
 
-WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input_EmployeeName'), 'Tom Holland')
+WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input_EmployeeName'), findTestData('add employee').getValue(
+        3, 1))
 
 WebUI.sendKeys(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input_EmployeeName'), Keys.chord(Keys.ENTER))
 
 WebUI.click(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/searchButton'))
 
-WebUI.verifyElementPresent(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/a_Tom'), 5)
+WebUI.verifyElementPresent(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/a_employeeName', [('employeeFirstName') : findTestData(
+                'add employee').getValue(1, 1), ('employeeSecondName') : findTestData('add employee').getValue(1, 2)]), 
+    5)
 
-WebUI.check(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/checkBoxFirst'))
+WebUI.click(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/checkBoxFirst'))
 
 WebUI.click(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/btnDelete'))
 

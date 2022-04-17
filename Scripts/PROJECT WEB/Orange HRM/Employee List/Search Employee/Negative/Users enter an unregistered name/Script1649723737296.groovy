@@ -23,7 +23,7 @@ WebUI.mouseOver(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/b_PIM')
 
 WebUI.click(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/a_Employee List'))
 
-WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input_EmployeeName'), 'Tony Stark')
+WebUI.setText(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/input_EmployeeName'), GlobalVariable.unregisteredName)
 
 WebUI.click(findTestObject('PROJECT WEB/Employee List/Page_OrangeHRM/searchButton'))
 

@@ -16,6 +16,39 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/PROJECT WEB/Orange HRM/Employee List/Add Employe/Positive/Successfully add employee</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>996fd46f-21fd-426f-9772-bbe6c944f7f8</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/add employee</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>996fd46f-21fd-426f-9772-bbe6c944f7f8</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>First Name</value>
+         <variableId>8e7e6116-1c93-4a8d-9a2d-a712eddf80fc</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>996fd46f-21fd-426f-9772-bbe6c944f7f8</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Last Name</value>
+         <variableId>e1ca1ff2-7b85-4c67-a37e-e32019117480</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>996fd46f-21fd-426f-9772-bbe6c944f7f8</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Url</value>
+         <variableId>67244636-a003-4e23-9454-ff22956397f4</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>996fd46f-21fd-426f-9772-bbe6c944f7f8</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Full Name</value>
+         <variableId>f49172cb-499f-4f51-848e-1879c8c70c2e</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>ac56198a-b97d-4ef0-bb75-0abf6ab72bf9</guid>
